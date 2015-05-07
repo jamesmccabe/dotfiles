@@ -1,0 +1,10 @@
+# MOC Config
+
+MusicDir = "/media/jmccabe/DATA/MP3"
+StartInMusicDir = yes
+
+ReadTags = no
+
+Theme = zenburn_theme
+
+#Layout1 = playlist(50%,50%,50%,50%)
