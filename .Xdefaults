@@ -17,6 +17,11 @@ URxvt*scrollTtyOutput: false
 URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 
+URxvt.perl-ext-common: default,clipboard,url-select
+
+URxvt.keysym.C-c: perl:clipboard:copy
+URxvt.keysym.C-v: perl:clipboard:paste
+
 URxvt*internalBorder: 4
 URxvt*letterSpace: -2
 
