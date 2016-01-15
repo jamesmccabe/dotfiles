@@ -12,10 +12,14 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
+setxkbmap -option ctrl:swapcaps
+
+xset +fp /usr/share/fonts/local
+xset +fp /usr/share/fonts/TTF
+xset +fp /usr/share/fonts/misc
+xset fp rehash
+
 xrdb -merge .Xdefaults &
 feh --bg-fill /home/jmccabe/Pictures/water.jpg
 
-# conky | while read LINE; do xsetroot -name "$LINE"; done &
-
-# exec dwm
 exec /usr/local/bin/stumpwm
