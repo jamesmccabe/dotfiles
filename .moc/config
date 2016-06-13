@@ -1,4 +1,5 @@
-# MOC Config
+# MOC Config file
+# Author: James McCabe <james.mccab3@gmail.com>
 
 MusicDir = "/media/jmccabe/DATA/MP3"
 StartInMusicDir = yes
@@ -7,4 +8,4 @@ ReadTags = no
 
 Theme = zenburn_theme
 
-#Layout1 = playlist(50%,50%,50%,50%)
+Layout1 = playlist(50%,50%,50%,50%)

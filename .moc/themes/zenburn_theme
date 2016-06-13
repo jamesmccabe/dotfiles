@@ -1,3 +1,7 @@
+# -*- mode: conf-unix -*-
+# MOC Zenburn Theme
+# Author: James McCabe <james.mccab3@gmail.com>
+
 background = default default
 frame = black default
 window_title = yellow default bold

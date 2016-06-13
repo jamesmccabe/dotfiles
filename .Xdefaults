@@ -1,3 +1,5 @@
+! -*- mode: conf-xdefaults -*-
+
 Xft.dpi: 96
 Xft.antialias: true
 Xft.rgba: rgb
