@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Stumpwm
+Comment=Stump window manager
+Exec=/home/jmccabe/.xinitrc
+Icon=
+Type=Application
+Name[en_IE]=Stumpwm
