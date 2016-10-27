@@ -10,6 +10,6 @@ I use Cinnamon on Linux Mint but I also experiment with Stump Window manager.
 I launch Stumpwm by using =Stumpwm.desktop= in =/usr/share/xsessions= to 
 call =.xinitrc= which launches Stumpwm.
 
-To get the correct Stumpwm icon to appear in Linux Mint's MDM manager, I copy
+To get the correct Stumpwm icon to appear in Linux Mint's MDM Login manager, I copy
 =stumpwm.svg= to =/usr/share/mdm/html-themes/common/img/sessions=. 
-The Login manager gives a choice of =St= to pick from the Desktop icons.
+The Login manager gives a choice of =St= to pick from the Desktop environment icons.
