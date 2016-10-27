@@ -1,0 +1,133 @@
+;;;; -*- Mode: Lisp -*-
+;;; .stumpwmrc --- StumpWM init file (StumpWM version 0.9.9)
+;; Author: James McCabe <james.mccab3@gmail.com>
+;; Created 21.09.2015
+
+(in-package :stumpwm)
+
+;; Set location for extension modules for StumpWM
+(set-module-dir "/home/jmccabe/.stumpwm.d/contrib")
+
+;; ttf-fonts module requires clx-truetype - load with quicklisp
+(load "~/quicklisp/setup.lisp")
+(ql:quickload :clx-truetype)
+;(xft:cache-fonts)
+
+;; Change Prefix key to Ctrl + z
+(set-prefix-key (kbd "C-z"))
+
+;; I like at least 8 seconds for messages!!!
+(setf *timeout-wait* 8)
+
+;; Input focus is transferred to the window you click on
+(setf *mouse-focus-policy* :click)
+
+;; Default timeout
+(setf *mode-line-timeout* 1)
+
+(defvar *battery-status-command* "acpi -b | awk -F '[ ,]' '{printf \"%s%s\", $3, $5}' | sed s/Discharging/\-/ | sed s/Unknown// | sed s/Full//  |  sed s/Charging/+/")
+
+(defvar *vol-status-command* "amixer get Master | grep '[[:digit:]]\\+%' -o | tr -d '\\n'")
+
+;; Modeline format
+(setf *screen-mode-line-format*
+      (list "[^B%n^b] %W " ; groups/windows
+            "^>" ; right align
+	    "Vol: "
+	    '(:eval (run-shell-command *vol-status-command* t))
+	    " | "
+	    "Bat: "
+	    '(:eval (run-shell-command *battery-status-command* t))
+	    ;"%B "
+	    " | "
+	    "%d"))            
+
+;; Yellow and magenta are swapped to show keys in yellow in Help screen
+(setf *colors*
+      '("black" "red" "green" "magenta" "blue" "yellow" "cyan" "white"))
+(update-color-map (current-screen))
+
+;; Set Modeline appearance
+(setf *mode-line-border-width* 0)
+(setf *mode-line-background-color* "#2b2b2b")
+(setf *mode-line-foreground-color* (hex-to-xlib-color "#f0df8e"))
+
+;; Set Window appearance
+(setf *window-format* "%m%n%s%c")
+(setq *window-border-style* :thin)
+(setq *ignore-wm-inc-hints* t)
+
+;; Set Window border colors
+(set-focus-color "DeepSkyBlue")
+(set-unfocus-color "#2b2b2b")
+(set-float-focus-color "DeepSkyBlue")
+(set-float-unfocus-color "gray15")
+
+;; Keybinding to display list of Windows
+(bind "l" "windowlist")
+
+;; I like message and input windows to be centered on the screen
+(setf *message-window-gravity* :center)
+(setf *input-window-gravity* :center)
+
+;; Message box settings
+(set-msg-border-width 2)
+(setf *message-window-padding* 4)
+
+;; Message colours
+(set-fg-color (hex-to-xlib-color "#f0df8e"))
+(set-bg-color "gray15")
+(set-border-color "ForestGreen")
+
+(if (not (head-mode-line (current-head)))
+    (toggle-mode-line (current-screen) (current-head)))
+
+;; Load module and set xft font
+(load-module "ttf-fonts")
+(set-font (make-instance 'xft:font :family "Anonymous Pro" :subfamily "Bold" :size 12))
+
+;; Groups
+(setf (group-name (first (screen-groups (current-screen)))) "Base")
+(gnewbg "Web")
+(gnewbg-float "Float")
+
+;; Keybindings to cycle through groups
+(bind "." "gnext")
+(bind "," "gprev")
+
+;; Extra keybinding for exiting splitscreen
+(bind "q" "only")
+
+;; Run-or-raise - Conkeror
+(defcommand browser () ()
+  "run or raise conkeror"
+  (run-or-raise "conkeror" '(:class "Conkeror")))
+(define-key *root-map* (kbd "c") "browser")
+
+;; Run-or-raise - Firefox
+(defcommand firefox () ()
+  "run or raise firefox"
+  (run-or-raise "firefox" '(:class "Firefox")))
+;(define-key *root-map* (kbd "f") "firefox")
+
+;; Run-or-raise - PCManFM
+(defcommand pcmanfm () ()
+  "run or raise pcmanfm"
+  (run-or-raise "pcmanfm" '(:class "pcmanfm")))
+;(define-key *root-map* (kbd "p" "pcmanfm"))
+
+;; Run Urxvt
+(defcommand terminal () ()
+  "run or raise urxvt"
+  (run-or-raise "urxvt" '(:class "URxvt")))
+(define-key *root-map* (kbd "u") "terminal")
+
+;; Take a screenshot
+(define-key *top-map* (kbd "Print")
+  "exec import -window root png:$HOME/Pictures/stumpwm-$(date +%s)$$.png")
+
+;; pipe backtrace info to stumpwm.log
+;(stumpwm:redirect-all-output #p"~/stumpwm.log")
+;(setf stumpwm:*debug-level* 10)
+
+;;; .stumpwmrc ends here
