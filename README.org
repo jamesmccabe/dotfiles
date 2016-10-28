@@ -11,7 +11,7 @@ I launch Stumpwm by copying =Stumpwm.desktop= into =/usr/share/xsessions=.
 It then gives an option in Linux Mint's MDM Login manager to select Stumpwm 
 which then calls =.xinitrc= which launches Stumpwm.
 
-To get the a Stumpwm icon to appear in Linux Mint's MDM Login manager, I copy
+To get a Stumpwm icon to appear in Linux Mint's MDM Login manager, I copy
 =stumpwm.svg= to =/usr/share/mdm/html-themes/common/img/sessions=. 
 The Login manager then gives a choice of =St= to pick from the list of Desktop environment icons.
-This is called from =/usr/share/mdm/html-themes/Mint-X/mdm.js=.
+This is called from javascript code in =/usr/share/mdm/html-themes/Mint-X/mdm.js=.
