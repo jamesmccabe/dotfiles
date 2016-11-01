@@ -3,6 +3,5 @@ Encoding=UTF-8
 Name=Stumpwm
 Comment=Stump window manager
 Exec=/home/jmccabe/.xinitrc
-Icon=
+Icon=/home/jmccabe/stump-icon.png
 Type=Application
-Name[en_IE]=Stumpwm
