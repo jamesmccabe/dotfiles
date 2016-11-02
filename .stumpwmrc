@@ -108,19 +108,13 @@
 (defcommand firefox () ()
   "run or raise firefox"
   (run-or-raise "firefox" '(:class "Firefox")))
-;(define-key *root-map* (kbd "f") "firefox")
+(define-key *root-map* (kbd "x") "firefox")
 
-;; Run-or-raise - PCManFM
-(defcommand pcmanfm () ()
-  "run or raise pcmanfm"
-  (run-or-raise "pcmanfm" '(:class "pcmanfm")))
-;(define-key *root-map* (kbd "p" "pcmanfm"))
+;; Launch Urxvt terminal window
+(define-key *root-map* (kbd "RET") "exec urxvt")
 
-;; Run Urxvt
-(defcommand terminal () ()
-  "run or raise urxvt"
-  (run-or-raise "urxvt" '(:class "URxvt")))
-(define-key *root-map* (kbd "u") "terminal")
+;; Launch a PCManFM window
+(define-key *root-map* (kbd "y") "exec pcmanfm")
 
 ;; Take a screenshot
 (define-key *top-map* (kbd "Print")
