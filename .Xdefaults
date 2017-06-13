@@ -8,8 +8,7 @@ Xft.hintstyle: hintfull
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault
 
-URxvt*geometry: 100x30
-URxvt*iconFile: /usr/share/icons/matefaenza/apps/scalable/terminal.svg
+URxvt*geometry: 100x35
 
 URxvt*scrollBar: false
 URxvt*scrollBar_right: false
@@ -32,5 +31,5 @@ URxvt*boldFont: xft: DejaVu Sans Mono:bold:size=9:antialias=true:hinting=true
 URxvt*italicFont: xft: DejaVu Sans Mono:italic:size=9:antialias=true:hinting=true
 URxvt*boldItalicFont: xft: DejaVu Sans Mono:bold:italic:size=9:antialias=true:hinting=true
 
-! -- Colours -- !
-#include "/home/jmccabe/.colours/zenburn"
+! -- Urxvt color scheme -- !
+#include "/home/jmccabe/.colors/zenburn"

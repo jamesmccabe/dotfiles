@@ -2,16 +2,10 @@
 
 ~/ is where the ♥ is
 
-These are my dotfiles for [[https://www.linuxmint.com/][Linux Mint]]. This repo is a work in progress...
+These are my dotfiles for [[https://www.ubuntu.com/desktop][Ubuntu]]. This repo is a work in progress...
 
 ** About
-I use Cinnamon on Linux Mint but I also experiment with [[https://stumpwm.github.io/][Stump]] Window Manager.
-  
-I launch Stumpwm by copying =Stumpwm.desktop= into =/usr/share/xsessions=. 
-It then gives an option in Linux Mint's MDM Login manager to select Stumpwm 
-which then calls =.xinitrc= which launches Stumpwm.
+I use Cinnamon on Ubuntu Linux but I also experiment with [[https://stumpwm.github.io/][Stump]] Window Manager.
 
-To get a Stumpwm icon to appear in Linux Mint's MDM Login manager, I copy
-=stumpwm.svg= to =/usr/share/mdm/html-themes/common/img/sessions=. 
-The Login manager then gives a choice of =St= to pick from the list of Desktop environment icons.
-This is called from javascript code in =/usr/share/mdm/html-themes/Mint-X/mdm.js=.
+These dotfiles configure my Urxvt terminal, mocp music player and logging
+into Stump window manager.
