@@ -32,4 +32,4 @@ URxvt*italicFont: xft: DejaVu Sans Mono:italic:size=9:antialias=true:hinting=tru
 URxvt*boldItalicFont: xft: DejaVu Sans Mono:bold:italic:size=9:antialias=true:hinting=true
 
 ! -- Urxvt color scheme -- !
-#include "/home/jmccabe/.colors/zenburn"
+#include "/home/jmccabe/.colors/gruvbox-dark-soft"
