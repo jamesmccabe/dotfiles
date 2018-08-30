@@ -7,5 +7,5 @@ These are my dotfiles for [[https://www.ubuntu.com/desktop][Ubuntu]]. This repo 
 ** About
 I use Unity on Ubuntu Linux but I also experiment with [[https://stumpwm.github.io/][Stump]] Window Manager.
 
-These dotfiles configure StumpWM, my Urxvt terminal, mocp music player and logging
-into Stump window manager.
+These dotfiles configure my Urxvt terminal, mocp music player and logging
+into Stump window manager. My StumpWM configuration is in its own [[https://github.com/jamesmccabe/stumpwm-config][repository]].
