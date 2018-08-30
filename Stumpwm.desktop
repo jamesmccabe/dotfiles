@@ -1,7 +1,9 @@
 [Desktop Entry]
-Encoding=UTF-8
-Name=Stumpwm
-Comment=Stump window manager
+Name=StumpWM
+Comment=This session logs you into StumpWM
 Exec=/home/jmccabe/.xinitrc
-Icon=
+TryExec=stumpwm
 Type=Application
+DesktopNames=StumpWM
+X-Ubuntu-Gettext-Domain=
+Name[en_IE]=Stumpwm
