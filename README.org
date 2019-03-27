@@ -8,4 +8,9 @@ These are my dotfiles for [[https://www.ubuntu.com/desktop][Ubuntu]]. This repo 
 I use Unity on Ubuntu Linux but I also experiment with [[https://stumpwm.github.io/][Stump]] Window Manager.
 
 These dotfiles configure my Urxvt terminal, mocp music player and logging
-into Stump window manager. My StumpWM configuration is in its own [[https://github.com/jamesmccabe/stumpwm-config][repository]].
+into Stump window manager. 
+
+My [[https://github.com/jamesmccabe/emacs-config][Emacs]] and [[https://github.com/jamesmccabe/stumpwm-config][StumpWM]] configurations are in their own repositories.
+
+** License
+[[https://github.com/jamesmccabe/dotfiles/blob/master/LICENSE][GNU GPL v3.0]]
