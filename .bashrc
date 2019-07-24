@@ -116,5 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+###############################################################################
+# Personal customizations - James McCabe                                      #
+###############################################################################
+
 # set scripts folder path
 export PATH=$PATH:~/scripts
+
+# personal aliases
+alias cdgit='. cdgit'
