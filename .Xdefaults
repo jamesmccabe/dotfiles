@@ -1,4 +1,3 @@
-! -*- mode: conf-xdefaults -*-
 ! .Xdefaults for Ubuntu
 
 Xft.dpi: 96
@@ -10,6 +9,13 @@ Xft.autohint: 0
 Xft.lcdfilter: lcddefault
 
 URxvt*geometry: 100x30
+URxvt*internalBorder: 4
+URxvt*letterSpace: -1
+
+URxvt.font: xft: DejaVu Sans Mono:size=9
+URxvt.boldFont: xft: DejaVu Sans Mono:bold:size=9
+URxvt.italicFont: xft: DejaVu Sans Mono:italic:size=9
+URxvt.boldItalicFont: xft: DejaVu Sans Mono:bold:italic:size=9
 
 URxvt*scrollBar: false
 URxvt*scrollBar_right: false
@@ -22,19 +28,13 @@ URxvt*scrollTtyKeypress: true
 ! Urxvt Perl Extensions
 URxvt.perl-lib: /usr/lib/urxvt/perl/
 URxvt.perl-ext-common: selection-to-clipboard,pasta
+
+! Copy and paste with Ctrl + c / Ctrl + v
 URxvt.keysym.C-c: perl:clipboard:copy
 URxvt.keysym.C-v: perl:pasta:paste
 ! Emacs copy and paste
 URxvt.keysym.M-w: perl:clipboard:copy
 URxvt.keysym.C-y: perl:pasta:paste
-
-URxvt*internalBorder: 4
-URxvt*letterSpace: -1
-
-URxvt*font: xft: DejaVu Sans Mono:size=9:antialias=true:hinting=true
-URxvt*boldFont: xft: DejaVu Sans Mono:bold:size=9:antialias=true:hinting=true
-URxvt*italicFont: xft: DejaVu Sans Mono:italic:size=9:antialias=true:hinting=true
-URxvt*boldItalicFont: xft: DejaVu Sans Mono:bold:italic:size=9:antialias=true:hinting=true
 
 ! -- Urxvt color scheme -- !
 #include "/home/jmccabe/.colors/gruvbox-dark-soft"
