@@ -1,4 +1,5 @@
 ! -*- mode: conf-xdefaults -*-
+! .Xdefaults for Ubuntu
 
 Xft.dpi: 96
 Xft.antialias: true
@@ -8,7 +9,7 @@ Xft.hintstyle: hintfull
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault
 
-URxvt*geometry: 100x35
+URxvt*geometry: 100x30
 
 URxvt*scrollBar: false
 URxvt*scrollBar_right: false
@@ -18,12 +19,17 @@ URxvt*scrollTtyOutput: false
 URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 
-URxvt.perl-ext-common: default,selection-to-clipboard,pasta
+! Urxvt Perl Extensions
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+URxvt.perl-ext-common: selection-to-clipboard,pasta
 URxvt.keysym.C-c: perl:clipboard:copy
 URxvt.keysym.C-v: perl:pasta:paste
+! Emacs copy and paste
+URxvt.keysym.M-w: perl:clipboard:copy
+URxvt.keysym.C-y: perl:pasta:paste
 
 URxvt*internalBorder: 4
-URxvt*letterSpace: -2
+URxvt*letterSpace: -1
 
 URxvt*font: xft: DejaVu Sans Mono:size=9:antialias=true:hinting=true
 URxvt*boldFont: xft: DejaVu Sans Mono:bold:size=9:antialias=true:hinting=true
