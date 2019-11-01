@@ -36,5 +36,9 @@ URxvt.keysym.C-v: perl:pasta:paste
 URxvt.keysym.M-w: perl:clipboard:copy
 URxvt.keysym.C-y: perl:pasta:paste
 
+! Emacs Window size location to avoid flickers
+Emacs.geometry: 100x35+60+60
+Emacs.font: DejaVu Sans Mono-10
+ 
 ! -- Urxvt color scheme -- !
 #include "/home/jmccabe/.colors/gruvbox-dark-soft"
