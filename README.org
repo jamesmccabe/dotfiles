@@ -2,12 +2,12 @@
 
 ~/ is where the ♥ is
 
-These are my dotfiles for [[https://www.ubuntu.com/desktop][Ubuntu]]. This repo is a work in progress...
+These are my dotfiles for [[https://www.ubuntu.com/desktop][Ubuntu]]. This repo is always a work in progress...
 
 ** About
-I use Unity on Ubuntu Linux but I also experiment with [[https://stumpwm.github.io/][Stump]] Window Manager.
+I use Gnome on Ubuntu Linux but I also experiment with [[https://stumpwm.github.io/][Stump]] Window Manager.
 
-These dotfiles configure my Urxvt terminal, mocp music player and logging
+These dotfiles configure my Urxvt terminal, git configuration and logging
 into Stump window manager. 
 
 My [[https://github.com/jamesmccabe/emacs-config][Emacs]] and [[https://github.com/jamesmccabe/stumpwm-config][StumpWM]] configurations are in their own repositories.
