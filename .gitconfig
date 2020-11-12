@@ -1,3 +1,5 @@
-[user]
-	email = " james.mccab3@gmail.com "
-	name = jamesmccabe
+[includeIf "gitdir:~/github/"]
+path = .gitconfig-github
+
+[includeIf "gitdir:~/gitlab/"]
+path = .gitconfig-gitlab

@@ -1,0 +1,37 @@
+# -*- mode: conf-unix -*-
+! -----------------------------------------------------------------------------
+! File: sientifik.Xdefaults
+! Description: Personal colorscheme
+! Author: James McCabe <jamesmccabe07(@)gmail.com>
+! License: GNU GPL v3
+! -----------------------------------------------------------------------------
+
+!! Sientifik Theme
+
+urxvt.background: #161825
+urxvt.foreground: #ffffff
+
+!black
+*color0:  #251f1f
+*color8:  #251f1f
+!red
+*color1:  #f72f33
+*color9:  #f72f33
+!blue
+*color4:  #56a4ff
+*color12: #56a4ff
+!green
+*color2:  #9dd637
+*color10: #9dd637
+!yellow
+*color3:  #ffac18
+*color11: #ffac18
+!orange
+*color5:  #eb4509
+*color13: #eb4509
+!magenta
+*color6:  #a644bf
+*color14: #a644bf
+!white
+*color7:  #efefef
+*color15: #efefef

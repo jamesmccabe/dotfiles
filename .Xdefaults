@@ -1,44 +1,45 @@
-! .Xdefaults for Ubuntu
+!! .Xdefaults --- Ubuntu 
 
-Xft.dpi: 96
-Xft.antialias: true
-Xft.rgba: rgb
-Xft.hinting: true
-Xft.hintstyle: hintfull
-Xft.autohint: 0
-Xft.lcdfilter: lcddefault
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintfull
+Xft.autohint:   false
+Xft.lcdfilter:  lcddefault
 
-URxvt*geometry: 100x30
-URxvt*internalBorder: 4
-URxvt*letterSpace: -1
+!! URxvt Appearance
 
-URxvt.font: xft: DejaVu Sans Mono:size=9
-URxvt.boldFont: xft: DejaVu Sans Mono:bold:size=9
-URxvt.italicFont: xft: DejaVu Sans Mono:italic:size=9
-URxvt.boldItalicFont: xft: DejaVu Sans Mono:bold:italic:size=9
+URxvt.font: xft: DejaVu Sans Mono:size=12
+URxvt.boldFont: xft: DejaVu Sans Mono:bold:size=12
+URxvt.italicFont: xft: DejaVu Sans Mono:italic:size=12
+URxvt.boldItalicFont: xft: DejaVu Sans Mono:bold:italic:size=12
 
-URxvt*scrollBar: false
-URxvt*scrollBar_right: false
-URxvt*scrollBar_floating: false
+URxvt*internalBorder: 3
+URxvt.letterSpace: -1
+URxvt.geometry: 90x30
+URxvt.scrollBar: false
 
 URxvt*scrollTtyOutput: false
 URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 
-! Urxvt Perl Extensions
-URxvt.perl-lib: /usr/lib/urxvt/perl/
-URxvt.perl-ext-common: selection-to-clipboard,pasta
+!! Urxvt Perl Extensions
+URxvt.perl-ext-common: selection-to-clipboard,resize-font,pasta
 
-! Copy and paste with Ctrl + c / Ctrl + v
+!! Copy and paste with Ctrl + c / Ctrl + v
 URxvt.keysym.C-c: perl:clipboard:copy
 URxvt.keysym.C-v: perl:pasta:paste
-! Emacs copy and paste
+!! Emacs copy and paste
 URxvt.keysym.M-w: perl:clipboard:copy
 URxvt.keysym.C-y: perl:pasta:paste
 
-! Emacs Window size location to avoid flickers
-Emacs.geometry: 100x35+60+60
-Emacs.font: DejaVu Sans Mono-10
- 
+!! Zoom
+!! https://github.com/simmel/urxvt-resize-font
+URxvt.keysym.C-minus:      resize-font:smaller
+URxvt.keysym.C-equal:      resize-font:bigger
+URxvt.keysym.C-0:          resize-font:reset
+URxvt.keysym.C-question:   resize-font:show
+
 ! -- Urxvt color scheme -- !
-#include "/home/jmccabe/.colors/gruvbox-dark-soft"
+#include "/home/jmccabe/.colors/sientifik"
