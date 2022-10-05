@@ -10,7 +10,7 @@ I use Gnome on Ubuntu Linux but I also experiment with [[https://stumpwm.github.
 These dotfiles configure my Urxvt terminal, git configuration and logging
 into Stump window manager. 
 
-My [[https://github.com/jamesmccabe/emacs-config][Emacs]] and [[https://github.com/jamesmccabe/stumpwm-config][StumpWM]] configurations are in their own repositories.
+My [[https://github.com/jamesmccabe/emacs-config][Emacs]] and [[https://github.com/jamesmccabe/stumpwm-demo-config][StumpWM]] configurations are in their own repositories.
 
 ** License
 [[https://github.com/jamesmccabe/dotfiles/blob/master/LICENSE][GNU GPL v3.0]]
