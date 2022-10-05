@@ -5,5 +5,3 @@ Exec=/home/jmccabe/.xinitrc
 TryExec=stumpwm
 Type=Application
 DesktopNames=StumpWM
-X-Ubuntu-Gettext-Domain=
-Name[en_IE]=Stumpwm
